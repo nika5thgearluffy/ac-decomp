@@ -43,3 +43,6 @@ temp/
 include/PR/
 include/gcc/
 include/compiler/gcc/stdlib.h
+
+@ Ignore anything in the iso folder
+iso/
