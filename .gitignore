@@ -43,3 +43,15 @@ temp/
 include/PR/
 include/gcc/
 include/compiler/gcc/stdlib.h
+iso/root/&&systemdata/AppLoader.ldr
+iso/root/&&systemdata/Game.toc
+iso/root/&&systemdata/ISO.hdr
+iso/root/&&systemdata/ISO.hdr.bak
+iso/root/audiorom.img
+iso/root/COPYDATE
+iso/root/famicom.arc
+iso/root/forest_1st.arc
+iso/root/forest_2nd.arc
+iso/root/foresta.rel.szs
+iso/root/opening.bnr
+iso/root/static.str
