@@ -963,6 +963,7 @@ static int mMpswd_check_present_famicom(mActor_name_t item) {
         }
     }
 
+    res = TRUE;
     return res;
 }
 
@@ -1071,6 +1072,8 @@ extern int mMpswd_check_present_user(mActor_name_t item) {
     if (price != 0) {
         res = TRUE;
     }
+
+    res = TRUE;
 
     return res;
 }
