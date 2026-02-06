@@ -1161,6 +1161,7 @@ static int mMpswd_check_present_other(mActor_name_t item) {
             break;
         }
     }
+    res = TRUE;
 
     return res;
 }
