@@ -214,7 +214,7 @@ static u8 tags_table_gomoku_narabe[] = {
 
 static u8 tags_table_mahjong[] = {
     GID_TAG(2), 'M', 'J',
-    GNM_TAG(6), 'M', 'A', 'H', 'J', 'O', 'N', 'G', // @BUG - should be GNM_TAG(7)
+    GNM_TAG(7), 'M', 'A', 'H', 'J', 'O', 'N', 'G', // @BUG - should be GNM_TAG(7)
     GNO_TAG(), FAMICOM_GAME_MAHJONG,
     END_TAG(),
 };

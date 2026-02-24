@@ -122,7 +122,7 @@ static void save_menu_move_main(GAME_SAVE_MENU* save_menu) {
 
 static void save_menu_draw_title(GAME_SAVE_MENU* save_menu) {
     /* This translates to 'セーブ メニュー' (save menu), the devs didn't bother translating it */
-    u8 title[] = { 0x9E, 0x90, 0xDF, CHAR_SPACE, 0xB2, 0xA6, 0x8D, 0x90 };
+    u8 title[] = { CHAR_S, CHAR_a, CHAR_v, CHAR_e, CHAR_SPACE, CHAR_M, CHAR_e, CHAR_m, CHAR_u };
 
     mFont_SetMatrix(save_menu->game.graph, mFont_MODE_FONT);
     mFont_SetLineStrings_AndSpace((GAME*)save_menu, title, ARRAY_SIZE(title, u8), 110.0f, 30.0f, 200, 50, 50, 255,
@@ -171,10 +171,9 @@ static void save_menu_draw_select_mode(GAME_SAVE_MENU* save_menu) {
     [1] = 'パック にセーブ     '  "Save to Pak"
 
     */
-    u8 select_mode[SAVE_MODE_NUM][13] = {
-        { CHAR_F, CHAR_l, CHAR_a, CHAR_s, CHAR_h, CHAR_R, CHAR_o, CHAR_m, CHAR_SPACE, 0x15, 0x9E, 0x90, 0xDF },
-        { 0xE2, 0x8F, 0x98, CHAR_SPACE, 0x15, 0x9E, 0x90, 0xDF, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE,
-          CHAR_SPACE },
+    u8 select_mode[SAVE_MODE_NUM][16] = {
+        { CHAR_S, CHAR_a, CHAR_v, CHAR_e, CHAR_SPACE, CHAR_t, CHAR_o, CHAR_SPACE, CHAR_F, CHAR_l, CHAR_a, CHAR_s, CHAR_h, CHAR_R, CHAR_o, CHAR_m },
+        { CHAR_S, CHAR_a, CHAR_v, CHAR_e, CHAR_SPACE, CHAR_t, CHAR_o, CHAR_SPACE, CHAR_P, CHAR_a, CHAR_k, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE },
     };
 
     mFont_SetMatrix(save_menu->game.graph, mFont_MODE_FONT);
