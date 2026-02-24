@@ -12,16 +12,16 @@
 #include "m_common_data.h"
 
 /* ' みとうろく' (Unregisterd) */
-static u8 mitouroku_str[6] = { 0x20, 0x1F, 0x13, 0x02, 0xC0, 0x07 };
+static u8 mitouroku_str[12] = { CHAR_U, CHAR_n, CHAR_r, CHAR_e, CHAR_g, CHAR_i, CHAR_s, CHAR_t, CHAR_e, CHAR_r, CHAR_e, CHAR_d };
 
 /* '<がいしゅつちゅう>' (<Away>) */
-static u8 l_gaishutu_str[10] = { 0x3C, 0xE7, 0x01, 0x0B, 0xCA, 0x11, 0x10, 0xCA, 0x02, 0x3E };
+static u8 l_gaishutu_str[4] = { CHAR_A, CHAR_w, CHAR_a, CHAR_y };
 
 /* '<ざいたくちゅう>' (<Home>) */
-static u8 l_zaitaku_str[9] = { 0x3C, 0xEC, 0x01, 0x0F, 0x07, 0x10, 0xCA, 0x02, 0x3E };
+static u8 l_zaitaku_str[4] = { CHAR_H, CHAR_o, CHAR_m, CHAR_e };
 
 /* 'よそからあそびにきた' (Came from another place) */
-static u8 l_yosokara_str[10] = { 0x60, 0x0E, 0x05, 0x7B, 0x00, 0x0E, 0xF7, 0x15, 0x06, 0x0F };
+static u8 l_yosokara_str[16] = { CHAR_I, CHAR_n, CHAR_SPACE, CHAR_a, CHAR_n, CHAR_o, CHAR_t, CHAR_h, CHAR_e, CHAR_r, CHAR_SPACE, CHAR_p, CHAR_l, CHAR_a, CHAR_c, CHAR_e };
 
 static void player_select_game_data_init(GAME_PLAYER_SELECT* player_select) {
     int player_no = player_select->player_no;
